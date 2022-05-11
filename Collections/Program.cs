@@ -6,7 +6,9 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[] isimler = new string[] {"Yigit" , "Murat","Engin","Batu" };
+            Console.WriteLine(isimler[0]);
+        
         }
     }
 }
