@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP1", "OOP1\OOP1.csproj", "{9E9F4BA2-D9CB-4B81-88F9-0BB4D49AB935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP1", "OOP1\OOP1.csproj", "{9E9F4BA2-D9CB-4B81-88F9-0BB4D49AB935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{CCB7E55A-007D-494A-B484-820C2580B6A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{CCB7E55A-007D-494A-B484-820C2580B6A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsIntro", "GenericsIntro\GenericsIntro.csproj", "{0A2A0174-58CE-4EA0-9AAD-B0EF4C829720}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CCB7E55A-007D-494A-B484-820C2580B6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB7E55A-007D-494A-B484-820C2580B6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB7E55A-007D-494A-B484-820C2580B6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A2A0174-58CE-4EA0-9AAD-B0EF4C829720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2A0174-58CE-4EA0-9AAD-B0EF4C829720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2A0174-58CE-4EA0-9AAD-B0EF4C829720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2A0174-58CE-4EA0-9AAD-B0EF4C829720}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
