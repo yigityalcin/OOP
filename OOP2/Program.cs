@@ -28,6 +28,10 @@ namespace OOP2 //abstraction yani soyutlama
 
             Musteri musteri3 = new GercekMusteri();
             Musteri musteri4 = new TuzelMusteri();
+
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(musteri1);
+            customerManager.Add(musteri2);
         }
     }
 }

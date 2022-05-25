@@ -7,7 +7,7 @@ namespace OOP2
     class Musteri // classların iki temel özelliği 1. içerisinde özellikler(prop aşağıdaki gibi) tutar ya da 2. içerisinde operasyonlar tutar.
     {
         public int Id { get; set; }
-        public string MusteriNo { get; set; }
+        public string MusteriNo { get; set; } 
 
     }
 }
