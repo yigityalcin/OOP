@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOP3
 {
@@ -7,15 +8,21 @@ namespace OOP3
         static void Main(string[] args)
         {
             IKrediManager ihtiyacKrediManager = new IhtiyacKrediManager(); // instance oluşturduk.
-            ihtiyacKrediManager.Hesapla();
-
             IKrediManager tasitKrediManager = new TasitKrediManager();
-            tasitKrediManager.Hesapla();
-
             IKrediManager konutKrediManager = new KonutKrediManager();
-            konutKrediManager.Hesapla();
+            //üstteki 3 kısım gerçek hayatta şubede çalışan arkadaşımızın ekranıdır.
+            
+            BasvuruManager basvuruManager = new BasvuruManager();
+            //basvuruManager.BasvuruYap(konutKrediManager);
+
+            List<IKrediManager> krediler = new List<IKrediManager>() {ihtiyacKrediManager,tasitKrediManager};
+           
+            basvuruManager.KrediOnBilgilendirmesiYap(krediler);
+            
 
             //Interfaceler de o interfacei implemente eden classın referans numarasını tutabilir.
+
+
         }
     }
 }
