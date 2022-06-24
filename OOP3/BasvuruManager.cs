@@ -6,7 +6,11 @@ namespace OOP3
 {
     class BasvuruManager
     {
-        public void BasvuruYap(IKrediManager krediManager)//böyle yaptığımızda ise tüm kredi türlerini içerir.
+        //Method injection
+        public void BasvuruYap(IKrediManager krediManager, List<ILoggerService> loggerServices)// ben bu methodu aynı zamanda loglamak istiyorum "ILoggerService loggerService"
+            //böyle yaptığımızda ise tüm kredi türlerini içerir.
+            //birden fazla logger yollamak istiyorsak List<> şeklinde yaparız.
+            //Birden fazla yolladığımız için listeyi foreach ile yazarız
         {
             //Başvuran bilgilerini değerlendirme
             //
@@ -18,6 +22,11 @@ namespace OOP3
 
             //onun yerine sadece şu kullanım doğrudur👇
             krediManager.Hesapla();
+            foreach (var loggerService in loggerServices)
+            {
+                loggerService.Log();
+            }
+            //loggerService.Log();//hangi loglayıcı seçilmişse sistemde onu logla
         }
         public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
         // liste oldugu icin 0 tanede olabilir 100 tanede olabilir 👆
